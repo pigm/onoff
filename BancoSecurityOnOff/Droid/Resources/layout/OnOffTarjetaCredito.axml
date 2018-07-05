@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFondo">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/llPadre"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/colorFondo">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/flechaCarruselAnterior"
+                    android:src="@drawable/flechacarruselderecha" />
+                <RelativeLayout
+                    android:layout_width="271dp"
+                    android:layout_height="168dp">
+                    <ImageView
+                        android:id="@+id/imgCardBcoSecurity"
+                        android:layout_width="280dp"
+                        android:layout_height="168dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="@dimen/notification_action_text_size"
+                        android:layout_marginRight="@dimen/notification_action_text_size" />
+                    <TextView
+                        android:id="@+id/numero_tarjeta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/imgCardBcoSecurity"
+                        android:layout_alignTop="@id/imgCardBcoSecurity"
+                        android:layout_alignRight="@id/imgCardBcoSecurity"
+                        android:layout_alignBottom="@id/imgCardBcoSecurity"
+                        android:layout_margin="1dp"
+                        android:paddingTop="90dp"
+                        android:paddingLeft="15dp"
+                        android:textSize="15dp"
+                        android:text="XXXX XXXX XXXX 2222"
+                        android:textColor="#000000" />
+                    <TextView
+                        android:id="@+id/nombre_tarjeta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/imgCardBcoSecurity"
+                        android:layout_alignTop="@id/imgCardBcoSecurity"
+                        android:layout_alignRight="@id/imgCardBcoSecurity"
+                        android:layout_alignBottom="@id/imgCardBcoSecurity"
+                        android:layout_margin="1dp"
+                        android:paddingTop="125dp"
+                        android:paddingLeft="15dp"
+                        android:textSize="14dp"
+                        android:text="Javier Jofre"
+                        android:textColor="#000000" />
+                </RelativeLayout>
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/flechaCarruselSiguiente"
+                    android:src="@drawable/flechacarruselizquierda" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/contenedor_indicadores_carrusel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:layout_height="100dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/cssmodal">
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="500dp">
+                    <Switch
+                        android:id="@+id/swtNameCard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:track="@drawable/switch_track_selector"
+                        android:layout_marginRight="6dp"
+                        android:thumbTint="@color/colorFondo" />
+                    <TextView
+                        android:textSize="16dp"
+                        android:textColor="#555555"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lblNameCard" />
+                    <TextView
+                        android:text="Activada"
+                        android:layout_width="wrap_content"
+                        android:textSize="16dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#389838"
+                        android:id="@+id/lblStatusCard" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="500dp">
+                    <TextView
+                        android:text="Al desactivar tu tarjeta no podrás efectuar compras ni giros en cajeros automáticos. Tus PAT y suscripciones a servicios como Netflix y Spotify seguirán activos."
+                        android:layout_width="300dp"
+                        android:textSize="13dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#555555"
+                        android:id="@+id/lblInfo" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/panelCanales"
+                android:orientation="vertical"
+                android:layout_marginTop="14dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/cssmodal">
+                <LinearLayout
+                    android:id="@+id/panelComprasPresenciales"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_width="300dp"
+                    android:clickable="true">
+                    <Switch
+                        android:id="@+id/swtCanalComprasPresenciales"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:track="@drawable/switch_track_selector"
+                        android:layout_marginRight="6dp"
+                        android:thumbTint="@color/colorFondo" />
+                    <TextView
+                        android:text="COMPRAS PRESENCIALES"
+                        android:textSize="13dp"
+                        android:textColor="#555555"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lblCanalComprasPresenciales" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/panelComprasInternet"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_width="300dp"
+                    android:clickable="true"
+                    android:layout_marginBottom="0.0dp">
+                    <Switch
+                        android:id="@+id/swtCanalComprasPorInternet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:track="@drawable/switch_track_selector"
+                        android:layout_marginRight="6dp"
+                        android:thumbTint="@color/colorFondo" />
+                    <TextView
+                        android:text="COMPRAS POR INTERNET"
+                        android:textSize="13dp"
+                        android:textColor="#555555"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lblCanalComprasPorInternet" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/panelGirosCajeroAutomaticos"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_width="300dp"
+                    android:clickable="true">
+                    <Switch
+                        android:id="@+id/swtCanaLGirosCajerosAutomaticos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:track="@drawable/switch_track_selector"
+                        android:layout_marginRight="6dp"
+                        android:thumbTint="@color/colorFondo" />
+                    <TextView
+                        android:text="GIROS EN CAJERO AUTOMÁTICO"
+                        android:textSize="13dp"
+                        android:textColor="#555555"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lblCanalGirosCajerosAutomaticos" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/panelComprasViaTelefonica"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_width="300dp">
+                    <Switch
+                        android:id="@+id/swtCanaLComprasViaTelefonica"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:track="@drawable/switch_track_selector"
+                        android:layout_marginRight="6dp"
+                        android:thumbTint="@color/colorFondo" />
+                    <TextView
+                        android:text="COMPRAS VÍA TELEFÓNICA"
+                        android:textSize="13dp"
+                        android:textColor="#555555"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lblCanalComprasViaTelefonica" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_height="40dp"
+                android:layout_width="fill_parent"
+                android:orientation="horizontal" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

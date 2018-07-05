@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/cssmodal">
+            <TextView
+                android:id="@+id/lblTituloDialogoError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lo sentimos"
+                android:textColor="#EC7900"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_marginTop="50dp" />
+            <TextView
+                android:id="@+id/lblMensajeErrorParrafoUno"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ha ocurrido un error,"
+                android:textColor="#444444"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_marginTop="20dp" />
+            <TextView
+                android:id="@+id/lblMensajeErrorParrafoDos"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="por favor inténtalo nuevamente."
+                android:textColor="#444444"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_marginTop="2dp" />
+            <Button
+                android:text="cerrar"
+                android:textSize="14dp"
+                android:layout_marginTop="25dp"
+                android:textColor="#777777"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnCerrarDialogo" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:orientation="vertical" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="69dp"
+            android:layout_height="70dp"
+            android:src="@drawable/alerta"
+            android:layout_weight="1"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:foregroundGravity="center"
+            android:layout_gravity="center" />
+    </RelativeLayout>
+</LinearLayout>

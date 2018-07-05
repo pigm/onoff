@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+    <style name="MyTheme.Base" parent="Theme.AppCompat.Light">
+
+    </style>
+    <style name="MyTheme" parent="MyTheme.Base">
+
+    </style>
+    <style name="MyTheme.Splash" parent ="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/splashBancoSecurity</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="TextLabel" parent="TextAppearance.AppCompat">
+        <item name="android:textColorHint">#555555 </item>
+        <item name="colorAccent">#555555 </item>
+        <item name="colorControlNormal">#555555 </item>
+
+    </style>
+    
+    <style name="NavigationDrawerStyle">
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="Theme_Dialog_Translucent" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="Theme_Dialog_Translucent_Loading" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@color/transparente_loading</item>
+    </style>
+
+ 
+</resources>

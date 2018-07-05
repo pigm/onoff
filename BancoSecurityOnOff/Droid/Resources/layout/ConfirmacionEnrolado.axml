@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundonoff">
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/securitybaner"
+        android:layout_width="270dp"
+        android:layout_height="45dp"
+        android:id="@+id/imgTitulo" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="54dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_marginTop="45dp"
+                android:src="@drawable/confirmacion"
+                android:layout_width="79dp"
+                android:layout_height="67dp"
+                android:id="@+id/imgConfirmacion" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/lblIndicacion"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¡Estamos listos!"
+                android:textColor="#333333"
+                android:textSize="20dp" />
+            <TextView
+                android:id="@+id/lblIndicacion1"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ahora prodrás administrar todos tus"
+                android:textColor="#333333"
+                android:textSize="16dp" />
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/lblIndicacion2"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="movimientos con tu  "
+                    android:textColor="#333333"
+                    android:textSize="16dp" />
+                <TextView
+                    android:id="@+id/lblIndicacion3"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Security GO."
+                    android:textColor="#333333"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnIngresarLoginC"
+            android:layout_gravity="center"
+            android:layout_marginTop="65dp"
+            android:layout_width="220dp"
+            android:layout_height="47dp"
+            android:text="COMENCEMOS"
+            android:background="@drawable/animaboton"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp" />
+    </LinearLayout>
+</LinearLayout>

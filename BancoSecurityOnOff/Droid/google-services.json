@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "922934291999",
+    "firebase_url": "https://security-go-5946a.firebaseio.com",
+    "project_id": "security-go-5946a",
+    "storage_bucket": "security-go-5946a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:922934291999:android:44052da2a7bb35c3",
+        "android_client_info": {
+          "package_name": "com.app.onoff.security.OnOff"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "922934291999-iohksmpgorvfmgtti2kb5dh09vv6ck49.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "922934291999-iohksmpgorvfmgtti2kb5dh09vv6ck49.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYM3GIzlNIxE25Zo83ysG5zotWcm7v-zs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,4 @@
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:gravity="center" xmlns:android="http://schemas.android.com/apk/res/android"><LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:orientation="horizontal"><ImageView android:src="@drawable/loadingbcosecurity" android:layout_width="75dp" android:layout_height="75dp" android:id="@+id/gifLoadingBcoSecurity" /><!--<com.felipecsl.gifimageview.library.GifImageView
+            android:layout_height="77dp"
+            android:layout_width="79dp"
+            android:id="@+id/gifLoadingBcoSecurity" />--></LinearLayout></RelativeLayout>

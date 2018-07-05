@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="fuchsia">#FF00FF</color>
+    <color name="red">#E60D2E</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="gray">#808080</color>
+    <color name="olive">#808000</color>
+    <color name="purple">#800080</color>
+    <color name="maroon">#800000</color>
+    <color name="aqua">#00FFFF</color>
+    <color name="lime">#00FF00</color>
+    <color name="teal">#008080</color>
+    <color name="green">#628E37</color>
+    <color name="blue">#0000FF</color>
+    <color name="navy">#000080</color>
+    <color name="black">#000000</color>
+    <color name="security_orange">#EC7900</color>
+    <color name="security_morado_menu">#6A2E92</color>
+    <color name="security_plomo">#26000000</color>
+    <color name="security_plomo_tarjeta">#555555</color>
+    <color name="security_cerrarmenu">#333D47</color>
+    <color name="transparente_loading">#E6FFFFFF</color>
+    <color name="security_line_sin_validacion">#777777</color>
+    <color name="security_on_off_activado">#628E37</color>
+    <color name="security_on_off_desactivado">#DD2E44</color>
+     <color name="security_on_off_edittextclavevozsinerror">#444444</color>
+    <color name="colorFondo">#F5F5F5</color>
+</resources>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/llFondoTerminoYcondiciones"
+    android:background="@drawable/backgroundonoff">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/cssmodal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1">
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/securitybaner"
+            android:layout_width="230dp"
+            android:layout_height="25dp"
+            android:id="@+id/imgTitulo" />
+        <TextView
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="Términos y condiciones"
+            android:textSize="17dp"
+            android:textColor="#333333"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblTitulo" />
+        <ScrollView
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp">
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF">
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/llBotoneraDeTerminosYCondiciones"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lblCondiciones"
+                        android:text="Condiciones de Acceso a Canales Digitales"
+                        android:textSize="16dp"
+                        android:textColor="#555555" />
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lblCondicionesParrafo"
+                        android:text="@string/condicionesParrafo"
+                        android:textSize="14dp"
+                        android:textColor="#555555" />
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lblServicios"
+                        android:text="Servicios"
+                        android:textSize="16dp"
+                        android:textColor="#555555" />
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lblServiciosParrafo"
+                        android:text="@string/serviciosParrafo"
+                        android:textSize="14dp"
+                        android:textColor="#555555" />
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lblPolíticaPrivacidadConﬁdencialidad"
+                        android:text="Política de privacidad y Conﬁdencialidad"
+                        android:textSize="16dp"
+                        android:textColor="#555555" />
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lblPolíticaPrivacidadConﬁdencialidadParrafo"
+                        android:text="@string/políticaPrivacidadConﬁdencialidadParrafo"
+                        android:textSize="14dp"
+                        android:textColor="#555555" />
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lblAccesoMedianteBiometría"
+                        android:text="Acceso mediante biometría"
+                        android:textSize="16dp"
+                        android:textColor="#555555" />
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lblAccesoMedianteBiometríaParrafo"
+                        android:text="@string/accesoMedianteBiometríaParrafo"
+                        android:textSize="14dp"
+                        android:textColor="#555555" />
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lblModoDeUso"
+                        android:text="Modo de Uso"
+                        android:textSize="16dp"
+                        android:textColor="#555555" />
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lblModoDeUsoParrafo"
+                        android:text="@string/modoDeUsoParrafo"
+                        android:textSize="14dp"
+                        android:textColor="#555555" />
+                    <TextView
+                        android:layout_marginTop="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lblResponsabilidad"
+                        android:text="Responsabilidad"
+                        android:textSize="16dp"
+                        android:textColor="#555555" />
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lblResponsabilidadParrafo"
+                        android:text="@string/responsabilidadParrafo"
+                        android:textSize="14dp"
+                        android:textColor="#555555" />
+                    <Button
+                        android:id="@+id/btnAceptaTerminos"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="50dp"
+                        android:layout_width="220dp"
+                        android:layout_height="47dp"
+                        android:text="Acepto"
+                        android:background="@drawable/animaboton"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16dp" />
+                    <ImageView
+                        android:src="@drawable/noutilizarapp"
+                        android:layout_gravity="center"
+                        android:layout_width="181dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_height="28dp"
+                        android:id="@+id/lblNoAceptoApp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linearLayoutaaaaa"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="14dp"
+                    android:orientation="vertical" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llEsapcio"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="14dp"
+        android:orientation="vertical" />
+</LinearLayout>

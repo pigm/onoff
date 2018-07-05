@@ -1,0 +1,22 @@
+﻿<Properties StartupConfiguration="{B66C2702-7F48-4149-89B0-0A4559671BDD}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/Actividades/AutenticacionPorSMSActivity.cs">
+    <Files>
+      <File FileName="Droid/util/ParametriaLogUtil.cs" Line="24" Column="1" />
+      <File FileName="Droid/Actividades/AutenticacionPorSMSActivity.cs" Line="329" Column="9" />
+      <File FileName="Droid/WebServiceSecurity/ServiciosSecurity.cs" Line="219" Column="45" />
+      <File FileName="Droid/Fragments/OnOffFragment.cs" Line="1" Column="1" />
+      <File FileName="Droid/Actividades/HomeActivity.cs" Line="71" Column="1" />
+      <File FileName="Droid/Resources/anim/animationloader.xml" Line="41" Column="73" />
+      <File FileName="Droid/Actividades/LoginActivity.cs" Line="126" Column="24" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.BancoSecurityOnOff.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="../../../Droid/Util/SMSBroadcast.cs" line="23" offsetX="578" offsetY="309" expression="intent" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+  <MultiItemStartupConfigurations />
+</Properties>

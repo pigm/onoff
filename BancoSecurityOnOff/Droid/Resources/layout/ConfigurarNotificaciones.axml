@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorFondo">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/llPadre"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/colorFondo">
+            <TextView
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblTituloConfiguracionNoti"
+                android:text="Configurar notificaciones"
+                android:textSize="16dp"
+                android:textColor="#555555"
+                android:layout_gravity="center" />
+            <LinearLayout
+                android:id="@+id/layoutPanelUno"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="14dp"
+                android:orientation="vertical"
+                android:background="@drawable/cssmodal">
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="11dp"
+                    android:id="@+id/lblSubTituloPanelUno"
+                    android:text="Selecciona las cuentas y/o tarjetas de las cuales deseas recibir notificaciones."
+                    android:textSize="14dp"
+                    android:textColor="#6A2E92" />
+                <LinearLayout
+                    android:id="@+id/contenedorTarjeta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="14dp"
+                    android:orientation="vertical" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutPanelDos"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="14dp"
+                android:orientation="vertical"
+                android:background="@drawable/cssmodal">
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:id="@+id/lblSubTituloPanelDos"
+                    android:layout_marginRight="11dp"
+                    android:text="¿Qué notificaciones deseas recibir?"
+                    android:textSize="14dp"
+                    android:textColor="#6A2E92" />
+                <LinearLayout
+                    android:id="@+id/contenedorNotificaciones"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="14dp"
+                    android:orientation="vertical" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutPanelCuatro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="14dp"
+                android:orientation="vertical"
+                android:background="@drawable/cssmodal">
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="11dp"
+                    android:id="@+id/lblSubTituloPanelCuatro"
+                    android:text="Configura un monto mínimo en pesos y dólares para tus notificaciones."
+                    android:textSize="14dp"
+                    android:textColor="#6A2E92" />
+                <LinearLayout
+                    android:id="@+id/llCuatroUno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="14dp"
+                    android:orientation="horizontal">
+                    <Switch
+                        android:layout_marginTop="7dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:track="@drawable/switch_track_selector"
+                        android:id="@+id/swtConfiguracionMonto"
+                        android:thumbTint="@color/colorFondo" />
+                    <TextView
+                        android:layout_marginTop="7dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/lblConfiguracionMonto"
+                        android:text="Monto mínimo"
+                        android:textSize="13dp"
+                        android:textColor="#555555" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/llCuatroDos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#555555"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        android:theme="@style/TextLabel"
+                        android:id="@+id/txtInputMontoPeso">
+                        <EditText
+                            android:paddingTop="10dp"
+                            android:id="@+id/txtMontoPeso"
+                            android:textColor="#555555"
+                            android:layout_width="220dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:backgroundTint="#628E37"
+                            android:textSize="16dp"
+                            android:textColorHint="#555555"
+                            android:maxLength="15"
+                            android:scrollbars="vertical"
+                            android:hint="Monto $"
+                            android:background="@android:color/transparent"
+                            android:inputType="number" />
+                    </android.support.design.widget.TextInputLayout>
+                    <View
+                        android:layout_width="220dp"
+                        android:layout_height="1dp"
+                        android:id="@+id/lineTxtMontoPeso"
+                        android:background="#777777"
+                        android:layout_gravity="center" />
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#555555"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        android:theme="@style/TextLabel"
+                        android:id="@+id/txtInputMontoDolar">
+                        <EditText
+                            android:paddingTop="10dp"
+                            android:id="@+id/txtMontoDolar"
+                            android:textColor="#555555"
+                            android:layout_gravity="center"
+                            android:layout_width="220dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:backgroundTint="#628E37"
+                            android:scrollbars="vertical"
+                            android:maxLength="15"
+                            android:hint="Monto US$"
+                            android:textColorHint="#555555"
+                            android:inputType="number"
+                            android:background="@android:color/transparent" />
+                    </android.support.design.widget.TextInputLayout>
+                    <View
+                        android:layout_width="220dp"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/lineTxtMontoDolar"
+                        android:background="#777777" />
+                    <Button
+                        android:layout_marginTop="18dp"
+                        android:layout_gravity="center"
+                        android:layout_width="240dp"
+                        android:layout_height="50dp"
+                        android:textSize="16dp"
+                        android:id="@+id/btnConfirmarMontosDolarPeso"
+                        android:background="@drawable/animaboton"
+                        android:text="Confirmar Montos"
+                        android:textColor="#FFFFFF" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone"
+                        android:id="@+id/llMensajeExitosoMontos">
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="4dp"
+                            android:background="#DBDBDB" />
+                        <LinearLayout
+                            android:layout_marginTop="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:id="@+id/llMensajeMontos">
+                            <ImageView
+                                android:layout_width="23dp"
+                                android:layout_height="23dp"
+                                android:src="@drawable/montoexitoso"
+                                android:layout_marginRight="6dp" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Montos configurados con éxito"
+                                android:textSize="13dp"
+                                android:textColor="#466826" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:orientation="vertical" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutPanelCinco"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="14dp"
+                android:orientation="vertical"
+                android:background="@drawable/cssmodal">
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="11dp"
+                    android:id="@+id/lblSubTituloPanelCinco"
+                    android:text="¿A través de qué canales deseas recibir tus notificaciones."
+                    android:textSize="14dp"
+                    android:textColor="#6A2E92" />
+                <LinearLayout
+                    android:id="@+id/llCincoUno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="14dp"
+                    android:orientation="horizontal">
+                    <Switch
+                        android:layout_marginTop="7dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:track="@drawable/switch_track_selector"
+                        android:id="@+id/swtCincoAppOnOff"
+                        android:thumbTint="@color/colorFondo" />
+                    <TextView
+                        android:layout_marginTop="7dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lblCincoAppOnOff"
+                        android:layout_marginLeft="5dp"
+                        android:text="APP"
+                        android:textSize="13dp"
+                        android:textColor="#818181" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/llCincoDos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+                    <Switch
+                        android:layout_marginTop="7dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:track="@drawable/switch_track_selector"
+                        android:thumbTint="@color/colorFondo"
+                        android:id="@+id/swtCincoCorreoElectronico" />
+                    <TextView
+                        android:layout_marginTop="7dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/lblCincoCorreoElectronico"
+                        android:text="CORREO ELECTRÓNICO"
+                        android:textSize="13dp"
+                        android:textColor="#818181" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/llCincoTres"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+                    <Switch
+                        android:layout_marginTop="7dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:track="@drawable/switch_track_selector"
+                        android:thumbTint="@color/colorFondo"
+                        android:id="@+id/swtCincoSms" />
+                    <TextView
+                        android:layout_marginTop="7dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/lblCincoSms"
+                        android:text="SMS"
+                        android:textSize="13dp"
+                        android:textColor="#818181" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/llPanelEnd"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#e3e0e0"
+                android:layout_marginTop="14dp"
+                android:orientation="vertical" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

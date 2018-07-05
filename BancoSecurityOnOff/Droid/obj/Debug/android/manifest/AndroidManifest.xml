@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.app.onoff.security.OnOff">
+  <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="21" />
+  <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+  <uses-permission android:name="android.permission.CALL_PHONE" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+  <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+  <uses-permission android:name="android.permission.READ_SMS" />
+  <uses-permission android:name="android.permission.RECEIVE_SMS" />
+  <uses-permission android:name="android.permission.RECEIVE_WAP_PUSH" />
+  <uses-permission android:name="android.permission.USE_SIP" />
+  <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />
+  <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+  <application android:label="Security GO" android:icon="@mipmap/icon" android:largeHeap="true" android:hardwareAccelerated="true" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
+    <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver" android:exported="false" />
+    <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:exported="true" android:permission="com.google.android.c2dm.permission.SEND">
+      <intent-filter>
+        <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+        <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+        <category android:name="com.app.onoff.security.OnOff" />
+      </intent-filter>
+    </receiver>
+    <activity android:configChanges="orientation|screenSize" android:label="AutenticacionPorVozActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="md557087bc54ffeaaa6199bd94028102a24.AutenticacionPorSMSActivity" />
+    <activity android:configChanges="orientation|screenSize" android:label="ConfirmacionEnroladoActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="md557087bc54ffeaaa6199bd94028102a24.ConfirmacionEnroladoActivity" />
+    <activity android:label="" android:name="md557087bc54ffeaaa6199bd94028102a24.DialogoErrorActivity" />
+    <activity android:configChanges="orientation|screenSize" android:label="FingerPrintAuthActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="md557087bc54ffeaaa6199bd94028102a24.FingerPrintAuthActivity" />
+    <activity android:configChanges="orientation|screenSize" android:label="" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="md557087bc54ffeaaa6199bd94028102a24.HomeActivity" />
+    <activity android:configChanges="orientation|screenSize" android:noHistory="true" android:screenOrientation="portrait" android:theme="@style/MyTheme.Splash" android:name="md557087bc54ffeaaa6199bd94028102a24.MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:configChanges="orientation|screenSize" android:label="RecuperarClaveActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="md557087bc54ffeaaa6199bd94028102a24.RecuperarClaveActivity" />
+    <activity android:configChanges="orientation|screenSize" android:label="TerminoYCondicionesActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="md557087bc54ffeaaa6199bd94028102a24.TerminoYCondicionesActivity" />
+    <activity android:configChanges="orientation|screenSize" android:label="LoginActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="md557087bc54ffeaaa6199bd94028102a24.LoginActivity" />
+    <activity android:configChanges="orientation|screenSize" android:label="LoginConocidoActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="md557087bc54ffeaaa6199bd94028102a24.LoginConocidoActivity" />
+    <service android:name="md557087bc54ffeaaa6199bd94028102a24.MyFirebaseIIDService">
+      <intent-filter>
+        <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+      </intent-filter>
+    </service>
+    <receiver android:enabled="true" android:label="SMS Receiver" android:name="md5c970aa385aafb300da5c846ea82ec915.SMSBroadcast" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="com.app.onoff.security.OnOff.mono.MonoRuntimeProvider.__mono_init__" />
+    <!--suppress ExportedReceiver-->
+    <receiver android:name="mono.android.Seppuku">
+      <intent-filter>
+        <action android:name="mono.android.intent.action.SEPPUKU" />
+        <category android:name="mono.android.intent.category.SEPPUKU.com.app.onoff.security.OnOff" />
+      </intent-filter>
+    </receiver>
+    <provider android:authorities="com.app.onoff.security.OnOff.firebaseinitprovider" android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:initOrder="100" />
+    <!-- FirebaseMessagingService performs security checks at runtime,
+             no need for explicit permissions despite exported="true" -->
+    <service android:name="com.google.firebase.messaging.FirebaseMessagingService" android:exported="true">
+      <intent-filter android:priority="-500">
+        <action android:name="com.google.firebase.MESSAGING_EVENT" />
+      </intent-filter>
+    </service>
+    <!-- FirebaseMessagingService performs security checks at runtime,
+             no need for explicit permissions despite exported="true" -->
+    <activity android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:exported="false" />
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+  </application>
+  <uses-permission android:name="android.permission.WAKE_LOCK" />
+  <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+</manifest>

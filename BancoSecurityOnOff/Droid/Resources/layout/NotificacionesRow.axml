@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/llFondoItemNotificacion">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/ic_noLeida"
+            android:src="@drawable/ic_notificacionnoleida" />
+        <TextView
+            android:text="hora"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/horaNotificacion"
+            android:textColor="#555555" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:gravity="right">
+            <ImageView
+                android:src="@drawable/exp1"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:paddingTop="2dp"
+                android:id="@+id/chevron"
+                android:layout_marginTop="@dimen/abc_action_bar_default_padding_start_material" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:text="contenido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="15dp"
+        android:textColor="#333333"
+        android:id="@+id/contenidoNotificacion" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="vertical" />
+</LinearLayout>
